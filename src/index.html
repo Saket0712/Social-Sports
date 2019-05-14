@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <title>Social Sports</title>
+        <base href="/">
+
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   </head>
+
+
+
+    <body>
+
+        <header>
+            <div class="main">
+          
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+          
+                    <li><a href="#">About</a></li>
+          
+                    <li><a href="#">Contact</a></li>
+          
+                </ul>
+                
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Games.." title="Type in a name">
+          
+                <ul id="myUL">
+                  <li><a href="#">Football</a></li>
+                  <li><a href="#">Cricket</a></li>
+                
+                  <li><a href="#">BasketBall</a></li>
+                  <li><a href="#">Hockey</a></li>
+                
+                  <li><a href="#">Badminton</a></li>
+                  <li><a href="#">Tennis</a></li>
+                  <li><a href="#">Golf</a></li>
+                </ul>
+                
+                <script>
+                function myFunction() {
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+                </script>
+          
+          
+                </div>
+          
+               
+          
+                   </div>
+          
+                   <div class="title">
+          
+                        <h1>List Of Games:</h1>
+                    </div>
+              </header>
+          
+              <section class="hero">
+          
+                    <div class="viewport">
+                            <div class="carousel-frame">
+                              <div class="carousel">
+                                <ul class="scroll">
+                                  <li class="scroll-item-outer">
+                                    <div class="scroll-item">
+                                      <img src="assets/image/dhoni.jpg" alt="Dhoni" />
+                                    </div>
+                                  </li>
+                                  <li class="scroll-item-outer">
+                                    <div class="scroll-item">
+                                      <img src="assets/image/foot.jpg" alt="Football"/>
+                                    </div>
+                                  </li>
+                                  <li class="scroll-item-outer">
+                                    <div class="scroll-item">
+                                      <img src="assets/image/golf.jpg" alt="golf" />
+                                    </div>
+                                  </li>
+                                  <li class="scroll-item-outer">
+                                    <div class="scroll-item">
+                                      <img src="assets/image/tennis.jpg " alt="Tennis"/>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <ul class="indicators">
+                            <li class="indicator">
+                              <button class="indicator-button" aria-pressed="true"></button>
+                            </li>
+                            <li class="indicator">
+                              <button class="indicator-button"></button>
+                            </li>
+                            <li class="indicator">
+                              <button class="indicator-button"></button>
+                            </li>
+                            <li class="indicator">
+                              <button class="indicator-button"></button>
+                            </li>
+                          </ul>
+          
+          
+          
+          
+              </section>
+          
+              <section>
+          
+                  <div class="area">
+          
+                      <h2><u>Contact Info</u></h2>
+                  </div>
+          
+                    <div class="map-area mb-100" >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.257218370645!2d77.07040951468485!3d28.4717993824815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d191df406d993%3A0x93d7bde828ecede5!2sIffco+Chowk+Metro+Station!5e0!3m2!1sen!2sin!4v1557771337390!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                </div>
+          
+              </section>
+          
+         
+                  <script src="active.js"></script> 
+             
+    </body>
+</html>
